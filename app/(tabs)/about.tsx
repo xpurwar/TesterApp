@@ -1,21 +1,23 @@
 import { Text, View, StyleSheet } from 'react-native';
+import React from 'react';
+import MapView from 'react-native-maps';
+
+
 
 export default function AboutScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>About screen</Text>
+      <MapView style={styles.map} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#25292e',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 0,
   },
-  text: {
-    color: '#fff',
+  map: {
+    width: '100%',
+    height: '100%',
   },
 });
